@@ -2,7 +2,6 @@
 #https://docs.blender.org/api/blender_python_api_2_65_5/info_tutorial_addon.html
 
 #TODO: Add description to the addon
-#TODO: Break apart into files
 
 bl_info = {
     "name": "Select Edges Marked Sharp",
@@ -36,7 +35,6 @@ class SelectSharpEdges(bpy.types.Operator):
                 e.select = True
 
         bmesh.update_edit_mesh(me, False)
-
         return {'FINISHED'}
 
 
