@@ -12,7 +12,6 @@ bl_info = {
     "description": "Select all edges marked as sharp",
     "warning": "",
     "wiki_url": ""
-                "",
     "category": "Mesh"
 }
 
