@@ -11,7 +11,7 @@ bl_info = {
     "location": "Edit Mode > Select Menu", #TODO: fix this
     "description": "Select all edges marked as sharp",
     "warning": "",
-    "wiki_url": ""
+    "wiki_url": "",
     "category": "Mesh"
 }
 
@@ -50,5 +50,5 @@ def menu_func(self, context):
 
 # This allows you to run the script directly from blenders text editor
 # to test the addon without having to install it.
-if __name__ == "__main__":
-    register()
+#if __name__ == "__main__":
+#    register()
