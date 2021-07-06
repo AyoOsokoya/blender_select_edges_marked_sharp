@@ -6,7 +6,7 @@
 bl_info = {
     "name": "Select Edges Marked Sharp",
     "author": "Ayodeji Osokoya",
-    "version": (0, 1),
+    "version": (0, 2),
     "blender": (2, 80, 0),
     "location": "Edit Mode > Select Menu", #TODO: fix this
     "description": "Select all edges marked as sharp",
@@ -25,15 +25,15 @@ class SelectSharpEdges(bpy.types.Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
-        obj = bpy.context.edit_object
-        me = obj.data
+        objects = bpy.context.selected_editable_objects
+        for obj in objects:
+            me = obj.data
+            bm = bmesh.from_edit_mesh(me)
 
-        bm = bmesh.from_edit_mesh(me)
-        for e in bm.edges:
-            if not e.smooth:
-                e.select = True
-
-        bmesh.update_edit_mesh(me, False)
+            for e in bm.edges:
+                if not e.smooth:
+                    e.select = True
+            bmesh.update_edit_mesh(me, False)
         return {'FINISHED'}
 
 
