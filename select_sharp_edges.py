@@ -7,7 +7,7 @@ bl_info = {
     "name": "Select Edges Marked Sharp",
     "author": "Ayodeji Osokoya",
     "version": (0, 1),
-    "blender": (2, 79, 0),
+    "blender": (2, 80, 0),
     "location": "Edit Mode > Select Menu", #TODO: fix this
     "description": "Select all edges marked as sharp",
     "warning": "",
