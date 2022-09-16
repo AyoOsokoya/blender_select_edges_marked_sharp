@@ -33,7 +33,7 @@ class SelectSharpEdges(bpy.types.Operator):
             for e in bm.edges:
                 if not e.smooth:
                     e.select = True
-            bmesh.update_edit_mesh(me, False)
+            bmesh.update_edit_mesh(me)
         return {'FINISHED'}
 
 
