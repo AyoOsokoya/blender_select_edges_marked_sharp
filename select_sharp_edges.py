@@ -21,7 +21,7 @@ import bmesh
 class SelectSharpEdges(bpy.types.Operator):
     """Select Edges Marked Sharp""" #tooltip for menu items and buttons.
     bl_idname = "object.select_edges_marked_sharp" # unique identifier for buttons and menu items to reference.
-    bl_label = "Select Edges Marked Sharp" # display name in the interface.
+    bl_label = "Edges Marked Sharp" # display name in the interface.
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
@@ -41,7 +41,7 @@ class SelectSharpEdges(bpy.types.Operator):
 class SelectSeamEdges(bpy.types.Operator):
     """Select Edges Marked Seam"""
     bl_idname = "object.select_edges_marked_seam"
-    bl_label = "Select Edges Marked Seam"
+    bl_label = "Edges Marked Seam"
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute(self, context):
