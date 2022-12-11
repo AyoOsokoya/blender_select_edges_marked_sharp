@@ -6,8 +6,8 @@
 bl_info = {
     "name": "Select Edges Marked Sharp & Seam",
     "author": "Ayodeji Osokoya",
-    "version": (0, 2),
-    "blender": (2, 80, 0),
+    "version": (0, 3),
+    "blender": (3, 0, 0),
     "location": "Edit Mode > Select Menu", #TODO: fix this
     "description": "Select all edges marked as sharp or as seam",
     "warning": "",
